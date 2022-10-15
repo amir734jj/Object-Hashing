@@ -1,10 +1,10 @@
 ﻿using System;
-using Core.Interfaces;
-using Core.Logic;
-using Core.Models;
-using HashAlgorithm = Core.Models.HashAlgorithm;
+using ObjectHashing.Interfaces;
+using ObjectHashing.Logic;
+using ObjectHashing.Models;
+using HashAlgorithm = ObjectHashing.Models.HashAlgorithm;
 
-namespace Core
+namespace ObjectHashing
 {
     public abstract class ObjectHash<T>
     {

@@ -1,6 +1,6 @@
-using Core.Models;
+using ObjectHashing.Models;
 
-namespace Core.Interfaces
+namespace ObjectHashing.Interfaces
 {
     public interface IConfigureObjectHashConfig<TSource>
     {

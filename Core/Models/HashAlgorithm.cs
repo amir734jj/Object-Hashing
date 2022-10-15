@@ -1,4 +1,4 @@
-namespace Core.Models
+namespace ObjectHashing.Models
 {
     public enum HashAlgorithm
     {

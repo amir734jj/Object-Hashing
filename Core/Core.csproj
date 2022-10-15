@@ -3,11 +3,20 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <LangVersion>8</LangVersion>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>Simple library to auto-generate hash code (base64 hashcode) for a class.</Description>
+        <RepositoryUrl>https://github.com/amir734jj/Object-Hashing.git</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/amir734jj/Object-Hashing.git</PackageProjectUrl>
+        <PackageReleaseNotes>Initial working state.</PackageReleaseNotes>
+        <Version>0.0.1</Version>
+        <RootNamespace>ObjectHashing</RootNamespace>
+        <AssemblyName>ObjectHashing</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="InfoViaLinq" Version="3.0.4" />
-        <PackageReference Include="Newtonsoft.Json" />
+        <PackageReference Include="InfoViaLinq" Version="3.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="5.0" />
     </ItemGroup>
 
 </Project>

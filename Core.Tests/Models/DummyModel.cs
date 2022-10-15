@@ -1,5 +1,6 @@
-using Core.Interfaces;
-using Core.Models;
+using ObjectHashing;
+using ObjectHashing.Interfaces;
+using ObjectHashing.Models;
 
 namespace Core.Tests.Models;
 

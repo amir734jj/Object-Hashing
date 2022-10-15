@@ -6,11 +6,10 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Security.Cryptography;
 using System.Text;
-using Core.Models;
-using Newtonsoft.Json;
-using HashAlgorithm = Core.Models.HashAlgorithm;
+using ObjectHashing.Models;
+using HashAlgorithm = ObjectHashing.Models.HashAlgorithm;
 
-namespace Core.Logic
+namespace ObjectHashing.Logic
 {
     internal static class HashingUtility
     {

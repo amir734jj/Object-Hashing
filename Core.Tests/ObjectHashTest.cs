@@ -1,6 +1,6 @@
 using AutoFixture;
-using Core.Models;
 using Core.Tests.Models;
+using ObjectHashing.Models;
 using Xunit;
 
 namespace Core.Tests;

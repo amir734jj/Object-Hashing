@@ -1,7 +1,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace Core.Interfaces
+namespace ObjectHashing.Interfaces
 {
     public interface IConfigureObjectHashConfigProperty<TSource> : IConfigureObjectHashConfigSerialization<TSource>
     {

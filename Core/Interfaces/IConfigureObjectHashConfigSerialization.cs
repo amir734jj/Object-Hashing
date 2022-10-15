@@ -1,6 +1,6 @@
 using System;
 
-namespace Core.Interfaces
+namespace ObjectHashing.Interfaces
 {
     public interface IConfigureObjectHashConfigSerialization<out TSource>
     {

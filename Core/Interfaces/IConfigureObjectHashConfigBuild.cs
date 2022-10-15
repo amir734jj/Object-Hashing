@@ -1,4 +1,4 @@
-namespace Core.Interfaces
+namespace ObjectHashing.Interfaces
 {
     public interface IConfigureObjectHashConfigBuild
     {

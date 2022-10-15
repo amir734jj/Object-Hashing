@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using Core.Interfaces;
 using InfoViaLinq;
 using InfoViaLinq.Interfaces;
 using Newtonsoft.Json;
+using ObjectHashing.Interfaces;
 
-namespace Core.Models
+namespace ObjectHashing.Models
 {
     internal class ConfigureObjectShaConfig<TSource> :
         IConfigureObjectHashConfig<TSource>,
