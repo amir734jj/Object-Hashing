@@ -8,8 +8,8 @@
         <Description>Simple library to auto-generate hash code (base64 hashcode) for a class.</Description>
         <RepositoryUrl>https://github.com/amir734jj/Object-Hashing.git</RepositoryUrl>
         <PackageProjectUrl>https://github.com/amir734jj/Object-Hashing.git</PackageProjectUrl>
-        <PackageReleaseNotes>Initial working state.</PackageReleaseNotes>
-        <Version>0.0.1</Version>
+        <PackageReleaseNotes>Added default hashing algorithm in the builder pattern.</PackageReleaseNotes>
+        <Version>0.0.2</Version>
         <RootNamespace>ObjectHashing</RootNamespace>
         <AssemblyName>ObjectHashing</AssemblyName>
     </PropertyGroup>

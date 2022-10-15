@@ -30,6 +30,13 @@ namespace ObjectHashing.Models
             return this;
         }
 
+        public IConfigureObjectHashConfigProperty<TSource> DefaultAlgorithm()
+        {
+            HashAlgorithm = HashAlgorithm.Sha1;
+
+            return this;
+        }
+
         public IConfigureObjectHashConfigProperty<TSource> Property(Expression<Func<TSource, object>> property)
         {
             PropertyInfos.Add(_infoViaLinq.PropLambda(property).Members().FirstOrDefault());

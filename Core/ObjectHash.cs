@@ -13,7 +13,7 @@ namespace ObjectHashing
         protected virtual void ConfigureObjectSha(IConfigureObjectHashConfig<T> config)
         {
             config
-                .Algorithm(HashAlgorithm.Sha1)
+                .DefaultAlgorithm()
                 .AllProperties()
                 .DefaultSerialization()
                 .Build();

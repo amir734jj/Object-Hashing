@@ -10,5 +10,11 @@ namespace ObjectHashing.Interfaces
         /// <param name="algorithm"></param>
         /// <returns></returns>
         public IConfigureObjectHashConfigProperty<TSource> Algorithm(HashAlgorithm algorithm);
+        
+        /// <summary>
+        /// Specifies default hashing algorithm to use.
+        /// </summary>
+        /// <returns></returns>
+        public IConfigureObjectHashConfigProperty<TSource> DefaultAlgorithm();
     }
 }
