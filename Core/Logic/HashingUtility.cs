@@ -130,14 +130,15 @@ namespace ObjectHashing.Logic
             }
 
             var projectionType = dynamicAnonymousType.CreateType();
+            
+            bindings.AddRange(config.PropertyInfos.Select(propertyInfo =>
+                Expression.Bind(projectionType.GetProperty(propertyInfo.Name)!,
+                    Expression.PropertyOrField(sourceExpr, propertyInfo.Name))));
+
             var creationExpr = Expression.New(projectionType.GetConstructor(Type.EmptyTypes)!);
             var bodyExpr = Expression.MemberInit(creationExpr, bindings);
             var projectExpr = Expression.Lambda<Func<T, object>>(bodyExpr, sourceExpr);
             var projectFunc = projectExpr.Compile();
-
-            bindings.AddRange(config.PropertyInfos.Select(propertyInfo =>
-                Expression.Bind(projectionType.GetProperty(propertyInfo.Name)!,
-                    Expression.PropertyOrField(sourceExpr, propertyInfo.Name))));
 
             return source => GetHashFromString(config.Serializer(projectFunc(source)), config.HashAlgorithm);
         }

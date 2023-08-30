@@ -34,4 +34,25 @@ public class ObjectHashTest
         Assert.NotNull(hash);
         Assert.NotEmpty(hash);
     }
+
+    [Theory]
+    [InlineData(HashAlgorithm.Md5)]
+    [InlineData(HashAlgorithm.Sha1)]
+    [InlineData(HashAlgorithm.Sha256)]
+    [InlineData(HashAlgorithm.Sha384)]
+    [InlineData(HashAlgorithm.Sha512)]
+    public void Test__Hash_Uniqueness(HashAlgorithm algorithm)
+    {
+        // Arrange
+        var models = _fixture.Build<DummyModel>()
+            .FromFactory<int>(_ => new DummyModel(algorithm))
+            .CreateMany(100)
+            .ToList();
+        
+        // Act
+        var hashes = models.Select(x => x.GenerateHash()).ToHashSet();
+
+        // Assert
+        Assert.Equal(models.Count, hashes.Count);
+    }
 }
