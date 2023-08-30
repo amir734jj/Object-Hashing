@@ -9,7 +9,7 @@
         <RepositoryUrl>https://github.com/amir734jj/Object-Hashing.git</RepositoryUrl>
         <PackageProjectUrl>https://github.com/amir734jj/Object-Hashing.git</PackageProjectUrl>
         <PackageReleaseNotes>Added default hashing algorithm in the builder pattern.</PackageReleaseNotes>
-        <Version>0.0.2</Version>
+        <Version>0.0.3</Version>
         <RootNamespace>ObjectHashing</RootNamespace>
         <AssemblyName>ObjectHashing</AssemblyName>
     </PropertyGroup>
