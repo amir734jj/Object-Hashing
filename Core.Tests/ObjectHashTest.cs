@@ -7,12 +7,7 @@ namespace Core.Tests;
 
 public class ObjectHashTest
 {
-    private readonly Fixture _fixture;
-
-    public ObjectHashTest()
-    {
-        _fixture = new Fixture();
-    }
+    private readonly Fixture _fixture = new();
 
     [Theory]
     [InlineData(HashAlgorithm.Md5)]

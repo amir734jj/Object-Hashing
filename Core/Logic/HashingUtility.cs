@@ -67,6 +67,11 @@ namespace ObjectHashing.Logic
             }
         }
 
+        /// <summary>
+        /// This method creates anonymous type just like the original type with all the properties
+        /// and then convert the object to this new type using object initializer syntax, then serializes
+        /// this new object of the new type and then gets the hash code.
+        /// </summary>
         public static Func<T, string> BuildRecipe<T>(ConfigureObjectShaConfig<T> config)
         {
             var sourceExpr = Expression.Parameter(typeof(T));
